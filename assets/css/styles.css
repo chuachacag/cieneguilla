@@ -1,0 +1,36 @@
+.card{
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#textContent {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas visibles */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#textContent.expanded {
+    -webkit-line-clamp: unset;
+}
+#textContent1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas visibles */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#textContent1.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.boton-mas {
+    color: black;
+    cursor: pointer;
+}
+
+.boton-mas:hover {
+    color: rgb(110, 110, 110);
+}
+
+
