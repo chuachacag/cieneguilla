@@ -2,35 +2,53 @@
     border: none;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
-
-#textContent {
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Número de líneas visibles */
-    -webkit-box-orient: vertical;
+.text-content {
     overflow: hidden;
-    text-overflow: ellipsis;
-}
-#textContent.expanded {
-    -webkit-line-clamp: unset;
-}
-#textContent1 {
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Número de líneas visibles */
+    -webkit-line-clamp: 2; /* Limita a 2 líneas */
     -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-#textContent1.expanded {
-    -webkit-line-clamp: unset;
 }
 
-.boton-mas {
-    color: black;
+.text-content.show-more {
+    -webkit-line-clamp: unset; /* Muestra todo el contenido */
+}
+
+.read-more {
+    color: #007bff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.boton-mas:hover {
-    color: rgb(110, 110, 110);
+.read-more:hover {
+    text-decoration: underline;
 }
 
+/* START CUADRITOS EN LUGAR DE GUIONES */
 
+/* Estilo para la lista con cuadritos verdes */
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    background-color: #fc800b; /* Color del cuadrito */
+}
+
+/* END CUADRITOS EN LUGAR DE GUIONES */
+
+.color-naranja{
+    color: #fc800b;
+}
