@@ -52,3 +52,17 @@
 .color-naranja{
     color: #fc800b;
 }
+.color-celeste{
+    color: #00a7d9;
+}
+.color-verde{
+    color: #7ED956;
+}
+a{
+    color: #007bff;
+    
+}
+a:hover{
+    color: #3696fc;
+    text-decoration: underline;
+}
