@@ -48,7 +48,9 @@
 }
 
 /* END CUADRITOS EN LUGAR DE GUIONES */
-
+.price{
+    text-align: right;
+}
 .color-naranja{
     color: #fc800b;
 }
@@ -63,6 +65,10 @@
 }
 .color-texto{
     color: #495057 !important;
+}
+.color-cabecera{
+    background-color: #00a7d9;
+    color: #fff;
 }
 a{
     color: #007bff;
