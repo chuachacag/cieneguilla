@@ -41,7 +41,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 11px;
+    top: 6px;
     width: 6px;
     height: 6px;
     background-color: #fc800b; /* Color del cuadrito */
@@ -66,13 +66,20 @@
 .color-texto{
     color: #495057 !important;
 }
+.text-white{
+    color: #fff !important;
+}
 .color-cabecera{
     background-color: #00a7d9;
     color: #fff;
 }
+.fondo-naranja{
+    background-color: #d6761c;
+    color: #fff;
+}
+
 a{
     color: #007bff;
-    
 }
 a:hover{
     color: #3696fc;
@@ -179,3 +186,40 @@ body {
 }
 
 /* END ESTILOS MENU DE CATEGORIAS */
+/* START VER MAS TEXTO */
+/* Estilo de las cards */
+
+
+/* Estilo del párrafo de texto */
+.text-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Mostrar solo 3 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.text-content.expanded {
+    -webkit-line-clamp: unset; /* Mostrar texto completo */
+}
+
+/* Estilo del botón */
+.toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+/* END VER MAS TEXTO */
+.desde{
+    margin-top: -15px;
+    margin-bottom: -5px;
+}

@@ -9,6 +9,22 @@ document.querySelectorAll('.read-more').forEach(function(button) {
 document.querySelector('.menu-toggle').addEventListener('click', function() {
     document.querySelector('.menu').classList.toggle('active');
 });
+/* START VER MAS TEXTO */
+function toggleText(contentId, buttonId) {
+    const textContent = document.getElementById(contentId);
+    const button = document.getElementById(buttonId);
+
+    if (textContent.classList.contains('expanded')) {
+        textContent.classList.remove('expanded');
+        button.textContent = 'Ver más';
+    } else {
+        textContent.classList.add('expanded');
+        button.textContent = 'Ver menos';
+    }
+}
+
+
+/* END VER MAS TEXTO */
 /* START MENU DE CATEGORIAS */
 document.querySelectorAll('.menu li a').forEach(function(link) {
     link.addEventListener('click', function(event) {
